@@ -13,8 +13,7 @@ class AuthService {
 
   // sign up - returns user or error
   Future<dynamic> register(String email, String password) async {
-    print("adding email:$email and password: $password ");
-
+    // print("adding email:$email and password: $password ");
     try {
       AuthResult result = await _auth.createUserWithEmailAndPassword(
         email: email,
